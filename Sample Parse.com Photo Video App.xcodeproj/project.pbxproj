@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A330EC2ABA8451ABD87673D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9667A9A8F94AE1B3BECBE6 /* libPods.a */; };
 		9FCEED9918CA660C00E40DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9818CA660C00E40DEC /* Foundation.framework */; };
 		9FCEED9B18CA660C00E40DEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */; };
 		9FCEED9D18CA660C00E40DEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9C18CA660C00E40DEC /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 		9FCEEE1718CA75E500E40DEC /* backgroundPattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1218CA75E500E40DEC /* backgroundPattern@2x.png */; };
 		9FCEEE1818CA75E500E40DEC /* default-568.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1318CA75E500E40DEC /* default-568.png */; };
 		9FCEEE1918CA75E500E40DEC /* default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1418CA75E500E40DEC /* default-568@2x.png */; };
+		9FCEEE1E18CA780700E40DEC /* PCPhotoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1D18CA780700E40DEC /* PCPhotoUploadViewController.m */; };
+		9FCEEE2018CA7C0500E40DEC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEE1F18CA7C0500E40DEC /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D9667A9A8F94AE1B3BECBE6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEED9518CA660C00E40DEC /* Sample Parse.com Photo Video App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Parse.com Photo Video App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEED9818CA660C00E40DEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +95,10 @@
 		9FCEEE1218CA75E500E40DEC /* backgroundPattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundPattern@2x.png"; sourceTree = "<group>"; };
 		9FCEEE1318CA75E500E40DEC /* default-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-568.png"; sourceTree = "<group>"; };
 		9FCEEE1418CA75E500E40DEC /* default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-568@2x.png"; sourceTree = "<group>"; };
+		9FCEEE1C18CA780700E40DEC /* PCPhotoUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPhotoUploadViewController.h; sourceTree = "<group>"; };
+		9FCEEE1D18CA780700E40DEC /* PCPhotoUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPhotoUploadViewController.m; sourceTree = "<group>"; };
+		9FCEEE1F18CA7C0500E40DEC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		A93B722431BE46EB9764797F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +117,10 @@
 				9FCEED9B18CA660C00E40DEC /* CoreGraphics.framework in Frameworks */,
 				9FCEEDD318CA688500E40DEC /* CFNetwork.framework in Frameworks */,
 				9FCEEDD118CA687E00E40DEC /* AudioToolbox.framework in Frameworks */,
+				9FCEEE2018CA7C0500E40DEC /* FacebookSDK.framework in Frameworks */,
 				9FCEED9D18CA660C00E40DEC /* UIKit.framework in Frameworks */,
 				9FCEED9918CA660C00E40DEC /* Foundation.framework in Frameworks */,
+				6A330EC2ABA8451ABD87673D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +144,7 @@
 				9FCEEDBD18CA660D00E40DEC /* Sample Parse.com Photo Video AppTests */,
 				9FCEED9718CA660C00E40DEC /* Frameworks */,
 				9FCEED9618CA660C00E40DEC /* Products */,
+				A93B722431BE46EB9764797F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +174,7 @@
 				9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */,
 				9FCEED9C18CA660C00E40DEC /* UIKit.framework */,
 				9FCEEDB718CA660D00E40DEC /* XCTest.framework */,
+				2D9667A9A8F94AE1B3BECBE6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +255,7 @@
 		9FCEEDF118CA695000E40DEC /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
+				9FCEEE1F18CA7C0500E40DEC /* FacebookSDK.framework */,
 			);
 			path = SDKs;
 			sourceTree = "<group>";
@@ -250,6 +263,7 @@
 		9FCEEDF218CA695000E40DEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FCEEE1B18CA77F200E40DEC /* PhotoUploadViewController */,
 				9FCEEE0718CA751800E40DEC /* SplashViewController */,
 				9FCEEE0818CA752600E40DEC /* LoginViewController */,
 				9FCEEE0918CA753500E40DEC /* SignUpViewController */,
@@ -301,6 +315,15 @@
 			name = MainViewController;
 			sourceTree = "<group>";
 		};
+		9FCEEE1B18CA77F200E40DEC /* PhotoUploadViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEEE1C18CA780700E40DEC /* PCPhotoUploadViewController.h */,
+				9FCEEE1D18CA780700E40DEC /* PCPhotoUploadViewController.m */,
+			);
+			name = PhotoUploadViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FCEEDC718CA660D00E40DEC /* Build configuration list for PBXNativeTarget "Sample Parse.com Photo Video App" */;
 			buildPhases = (
+				4A3AAD24ABF642DE85A1B063 /* Check Pods Manifest.lock */,
 				9FCEED9118CA660C00E40DEC /* Sources */,
 				9FCEED9218CA660C00E40DEC /* Frameworks */,
 				9FCEED9318CA660C00E40DEC /* Resources */,
+				C7AFD0CA8D364B3BA28B15B6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,6 +423,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A3AAD24ABF642DE85A1B063 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7AFD0CA8D364B3BA28B15B6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9FCEED9118CA660C00E40DEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -408,6 +466,7 @@
 				9FCEEE0618CA6F1300E40DEC /* PACMainViewController.m in Sources */,
 				9FCEEE0418CA6F1300E40DEC /* PACLoginViewController.m in Sources */,
 				9FCEEDFD18CA6F0700E40DEC /* PACSplashViewController.m in Sources */,
+				9FCEEE1E18CA780700E40DEC /* PCPhotoUploadViewController.m in Sources */,
 				9FCEEDA918CA660C00E40DEC /* PCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,13 +583,15 @@
 		};
 		9FCEEDC818CA660D00E40DEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93B722431BE46EB9764797F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
+					"$(SRCROOT)/Sample\\\\\\ Parse.com\\\\\\ Photo\\\\\\ Video\\\\\\ App/SDKs",
+					"/Users/Dron/Projects/MyOwnProjects/Sample-Parse.com-Photo-Video-App/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";
@@ -542,13 +603,15 @@
 		};
 		9FCEEDC918CA660D00E40DEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93B722431BE46EB9764797F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
+					"$(SRCROOT)/Sample\\\\\\ Parse.com\\\\\\ Photo\\\\\\ Video\\\\\\ App/SDKs",
+					"/Users/Dron/Projects/MyOwnProjects/Sample-Parse.com-Photo-Video-App/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";

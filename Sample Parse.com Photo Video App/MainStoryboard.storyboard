@@ -10,6 +10,7 @@
             <objects>
                 <navigationController definesPresentationContext="YES" id="rIG-XC-mqQ" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GyN-rO-yFd">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,15 +28,15 @@
             <objects>
                 <viewController id="uBs-R5-vRR" customClass="PACSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Why-sq-2BH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="default-568.png" id="Xfy-WK-BFk">
-                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-44" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="W33-eS-P0z">
-                                <rect key="frame" x="142" y="234" width="37" height="37"/>
+                                <rect key="frame" x="142" y="190" width="37" height="37"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KM4-EJ-eDW">
                                 <rect key="frame" x="60" y="279" width="200" height="44"/>
@@ -64,6 +65,7 @@
                                 <state key="selected" image="loginButtonPressed.png"/>
                                 <connections>
                                     <action selector="didTapWithOutLogin:" destination="uBs-R5-vRR" eventType="touchUpInside" id="DPn-Yo-IRa"/>
+                                    <segue destination="HGi-mg-dj3" kind="push" id="12o-jV-PWK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nNV-H1-rJU">
@@ -100,11 +102,11 @@
             <objects>
                 <viewController id="QKD-5f-fRl" customClass="PACMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eaT-b3-DBp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundPattern.png" id="qas-jc-zKR">
-                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-105" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -115,19 +117,46 @@
             </objects>
             <point key="canvasLocation" x="1212" y="545"/>
         </scene>
+        <!--Photo Upload View Controller-->
+        <scene sceneID="r9D-3w-dUQ">
+            <objects>
+                <viewController id="HGi-mg-dj3" customClass="PCPhotoUploadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkT-fK-NfB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TT7-M3-PD0">
+                                <rect key="frame" x="20" y="42" width="113" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectPhotoButtonTap:" destination="HGi-mg-dj3" eventType="touchUpInside" id="aS5-A3-rPL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6d3-Yf-7Bm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lti-k5-LCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="77"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="VfG-hr-U8e">
             <objects>
                 <viewController id="mRK-ZE-TEt" customClass="PACLoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7D2-ec-yR0">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundPattern" id="oBV-XB-XA1">
-                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-105" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rly-xA-Z4Q">
-                                <rect key="frame" x="60" y="170" width="200" height="44"/>
+                                <rect key="frame" x="60" y="137" width="200" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="loginButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,23 +167,23 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="1Oi-oD-m8C">
-                                <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="44"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="8DS-T1-ht5">
-                                <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="87" width="320" height="44"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" id="hW8-Tm-lQS">
-                                <rect key="frame" x="20" y="44" width="280" height="44"/>
+                                <rect key="frame" x="20" y="36" width="280" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" id="vLh-8i-ceX">
-                                <rect key="frame" x="20" y="108" width="280" height="44"/>
+                                <rect key="frame" x="20" y="87" width="280" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="93Z-L1-h6m">
-                                <rect key="frame" x="142" y="234" width="37" height="37"/>
+                                <rect key="frame" x="142" y="190" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -176,14 +205,14 @@
             <objects>
                 <viewController id="WOq-Nj-K1a" customClass="PACSignupViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R1J-3I-vW9">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundPattern" id="iru-N9-KP7">
-                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-105" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f63-vC-G4H">
-                                <rect key="frame" x="60" y="210" width="200" height="44"/>
+                                <rect key="frame" x="60" y="170" width="200" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="signupButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,31 +223,31 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="El2-bm-mmJ">
-                                <rect key="frame" x="0.0" y="150" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="121" width="320" height="44"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" id="n0L-Iw-uGn">
-                                <rect key="frame" x="20" y="150" width="280" height="44"/>
+                                <rect key="frame" x="20" y="121" width="280" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="NIk-ep-t4g">
-                                <rect key="frame" x="0.0" y="30" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="24" width="320" height="44"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" id="Rep-hf-UKv">
-                                <rect key="frame" x="20" y="30" width="280" height="44"/>
+                                <rect key="frame" x="20" y="24" width="280" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="j6A-oW-bOK">
-                                <rect key="frame" x="0.0" y="90" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="73" width="320" height="44"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" id="H0r-jC-O8Y">
-                                <rect key="frame" x="20" y="90" width="280" height="44"/>
+                                <rect key="frame" x="20" y="73" width="280" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="98g-uW-YBO">
-                                <rect key="frame" x="142" y="262" width="37" height="37"/>
+                                <rect key="frame" x="142" y="213" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

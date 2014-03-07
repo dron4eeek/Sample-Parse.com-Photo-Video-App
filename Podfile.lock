@@ -1,0 +1,13 @@
+PODS:
+  - CTAssetsPickerController (1.5.2)
+  - MBProgressHUD (0.8)
+
+DEPENDENCIES:
+  - CTAssetsPickerController (~> 1.5.0)
+  - MBProgressHUD (~> 0.8)
+
+SPEC CHECKSUMS:
+  CTAssetsPickerController: bb78e88095a9a56eae2e0b3e66c61c0401d031d5
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+
+COCOAPODS: 0.29.0
