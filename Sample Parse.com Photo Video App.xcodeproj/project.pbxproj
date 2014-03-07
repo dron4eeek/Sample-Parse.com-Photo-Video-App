@@ -13,14 +13,31 @@
 		9FCEEDA318CA660C00E40DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEDA118CA660C00E40DEC /* InfoPlist.strings */; };
 		9FCEEDA518CA660C00E40DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDA418CA660C00E40DEC /* main.m */; };
 		9FCEEDA918CA660C00E40DEC /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDA818CA660C00E40DEC /* PCAppDelegate.m */; };
-		9FCEEDAC18CA660C00E40DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEDAA18CA660C00E40DEC /* Main.storyboard */; };
-		9FCEEDAF18CA660C00E40DEC /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDAE18CA660C00E40DEC /* PCViewController.m */; };
 		9FCEEDB118CA660C00E40DEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEDB018CA660C00E40DEC /* Images.xcassets */; };
 		9FCEEDB818CA660D00E40DEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDB718CA660D00E40DEC /* XCTest.framework */; };
 		9FCEEDB918CA660D00E40DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9818CA660C00E40DEC /* Foundation.framework */; };
 		9FCEEDBA18CA660D00E40DEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9C18CA660C00E40DEC /* UIKit.framework */; };
 		9FCEEDC218CA660D00E40DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEDC018CA660D00E40DEC /* InfoPlist.strings */; };
 		9FCEEDC418CA660D00E40DEC /* Sample_Parse_com_Photo_Video_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDC318CA660D00E40DEC /* Sample_Parse_com_Photo_Video_AppTests.m */; };
+		9FCEEDD118CA687E00E40DEC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDD018CA687E00E40DEC /* AudioToolbox.framework */; };
+		9FCEEDD318CA688500E40DEC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDD218CA688500E40DEC /* CFNetwork.framework */; };
+		9FCEEDD518CA689300E40DEC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDD418CA689300E40DEC /* CoreLocation.framework */; };
+		9FCEEDD718CA689B00E40DEC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDD618CA689B00E40DEC /* libz.dylib */; };
+		9FCEEDD918CA68A100E40DEC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDD818CA68A100E40DEC /* MobileCoreServices.framework */; };
+		9FCEEDDB18CA68A700E40DEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDDA18CA68A700E40DEC /* QuartzCore.framework */; };
+		9FCEEDDD18CA68AD00E40DEC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDDC18CA68AD00E40DEC /* Security.framework */; };
+		9FCEEDDF18CA68B300E40DEC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDDE18CA68B300E40DEC /* StoreKit.framework */; };
+		9FCEEDE118CA68B900E40DEC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDE018CA68B900E40DEC /* SystemConfiguration.framework */; };
+		9FCEEDF518CA698100E40DEC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDF418CA698100E40DEC /* Parse.framework */; };
+		9FCEEDFA18CA6E6400E40DEC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEDF918CA6E6400E40DEC /* MainStoryboard.storyboard */; };
+		9FCEEDFD18CA6F0700E40DEC /* PACSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDFC18CA6F0700E40DEC /* PACSplashViewController.m */; };
+		9FCEEE0418CA6F1300E40DEC /* PACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDFF18CA6F1300E40DEC /* PACLoginViewController.m */; };
+		9FCEEE0518CA6F1300E40DEC /* PACSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEE0118CA6F1300E40DEC /* PACSignupViewController.m */; };
+		9FCEEE0618CA6F1300E40DEC /* PACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEE0318CA6F1300E40DEC /* PACMainViewController.m */; };
+		9FCEEE1618CA75E500E40DEC /* backgroundPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1118CA75E500E40DEC /* backgroundPattern.png */; };
+		9FCEEE1718CA75E500E40DEC /* backgroundPattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1218CA75E500E40DEC /* backgroundPattern@2x.png */; };
+		9FCEEE1818CA75E500E40DEC /* default-568.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1318CA75E500E40DEC /* default-568.png */; };
+		9FCEEE1918CA75E500E40DEC /* default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1418CA75E500E40DEC /* default-568@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +61,36 @@
 		9FCEEDA618CA660C00E40DEC /* Sample Parse.com Photo Video App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample Parse.com Photo Video App-Prefix.pch"; sourceTree = "<group>"; };
 		9FCEEDA718CA660C00E40DEC /* PCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAppDelegate.h; sourceTree = "<group>"; };
 		9FCEEDA818CA660C00E40DEC /* PCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCAppDelegate.m; sourceTree = "<group>"; };
-		9FCEEDAB18CA660C00E40DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9FCEEDAD18CA660C00E40DEC /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
-		9FCEEDAE18CA660C00E40DEC /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
 		9FCEEDB018CA660C00E40DEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9FCEEDB618CA660D00E40DEC /* Sample Parse.com Photo Video AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample Parse.com Photo Video AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEEDB718CA660D00E40DEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9FCEEDBF18CA660D00E40DEC /* Sample Parse.com Photo Video AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sample Parse.com Photo Video AppTests-Info.plist"; sourceTree = "<group>"; };
 		9FCEEDC118CA660D00E40DEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FCEEDC318CA660D00E40DEC /* Sample_Parse_com_Photo_Video_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sample_Parse_com_Photo_Video_AppTests.m; sourceTree = "<group>"; };
+		9FCEEDCD18CA679B00E40DEC /* AppHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppHelper.h; sourceTree = "<group>"; };
+		9FCEEDD018CA687E00E40DEC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9FCEEDD218CA688500E40DEC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9FCEEDD418CA689300E40DEC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9FCEEDD618CA689B00E40DEC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9FCEEDD818CA68A100E40DEC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9FCEEDDA18CA68A700E40DEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9FCEEDDC18CA68AD00E40DEC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9FCEEDDE18CA68B300E40DEC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9FCEEDE018CA68B900E40DEC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9FCEEDF418CA698100E40DEC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Sample Parse.com Photo Video App/SDKs/Parse.framework"; sourceTree = "<group>"; };
+		9FCEEDF918CA6E6400E40DEC /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9FCEEDFB18CA6F0700E40DEC /* PACSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACSplashViewController.h; sourceTree = "<group>"; };
+		9FCEEDFC18CA6F0700E40DEC /* PACSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACSplashViewController.m; sourceTree = "<group>"; };
+		9FCEEDFE18CA6F1300E40DEC /* PACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACLoginViewController.h; sourceTree = "<group>"; };
+		9FCEEDFF18CA6F1300E40DEC /* PACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACLoginViewController.m; sourceTree = "<group>"; };
+		9FCEEE0018CA6F1300E40DEC /* PACSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACSignupViewController.h; sourceTree = "<group>"; };
+		9FCEEE0118CA6F1300E40DEC /* PACSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACSignupViewController.m; sourceTree = "<group>"; };
+		9FCEEE0218CA6F1300E40DEC /* PACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACMainViewController.h; sourceTree = "<group>"; };
+		9FCEEE0318CA6F1300E40DEC /* PACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACMainViewController.m; sourceTree = "<group>"; };
+		9FCEEE1118CA75E500E40DEC /* backgroundPattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundPattern.png; sourceTree = "<group>"; };
+		9FCEEE1218CA75E500E40DEC /* backgroundPattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundPattern@2x.png"; sourceTree = "<group>"; };
+		9FCEEE1318CA75E500E40DEC /* default-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-568.png"; sourceTree = "<group>"; };
+		9FCEEE1418CA75E500E40DEC /* default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-568@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +98,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCEEDF518CA698100E40DEC /* Parse.framework in Frameworks */,
+				9FCEEDE118CA68B900E40DEC /* SystemConfiguration.framework in Frameworks */,
+				9FCEEDDF18CA68B300E40DEC /* StoreKit.framework in Frameworks */,
+				9FCEEDDD18CA68AD00E40DEC /* Security.framework in Frameworks */,
+				9FCEEDDB18CA68A700E40DEC /* QuartzCore.framework in Frameworks */,
+				9FCEEDD918CA68A100E40DEC /* MobileCoreServices.framework in Frameworks */,
+				9FCEEDD718CA689B00E40DEC /* libz.dylib in Frameworks */,
+				9FCEEDD518CA689300E40DEC /* CoreLocation.framework in Frameworks */,
 				9FCEED9B18CA660C00E40DEC /* CoreGraphics.framework in Frameworks */,
+				9FCEEDD318CA688500E40DEC /* CFNetwork.framework in Frameworks */,
+				9FCEEDD118CA687E00E40DEC /* AudioToolbox.framework in Frameworks */,
 				9FCEED9D18CA660C00E40DEC /* UIKit.framework in Frameworks */,
 				9FCEED9918CA660C00E40DEC /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +149,16 @@
 		9FCEED9718CA660C00E40DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FCEEDF418CA698100E40DEC /* Parse.framework */,
+				9FCEEDE018CA68B900E40DEC /* SystemConfiguration.framework */,
+				9FCEEDDE18CA68B300E40DEC /* StoreKit.framework */,
+				9FCEEDDC18CA68AD00E40DEC /* Security.framework */,
+				9FCEEDDA18CA68A700E40DEC /* QuartzCore.framework */,
+				9FCEEDD818CA68A100E40DEC /* MobileCoreServices.framework */,
+				9FCEEDD618CA689B00E40DEC /* libz.dylib */,
+				9FCEEDD418CA689300E40DEC /* CoreLocation.framework */,
+				9FCEEDD218CA688500E40DEC /* CFNetwork.framework */,
+				9FCEEDD018CA687E00E40DEC /* AudioToolbox.framework */,
 				9FCEED9818CA660C00E40DEC /* Foundation.framework */,
 				9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */,
 				9FCEED9C18CA660C00E40DEC /* UIKit.framework */,
@@ -114,10 +172,15 @@
 			children = (
 				9FCEEDA718CA660C00E40DEC /* PCAppDelegate.h */,
 				9FCEEDA818CA660C00E40DEC /* PCAppDelegate.m */,
-				9FCEEDAA18CA660C00E40DEC /* Main.storyboard */,
-				9FCEEDAD18CA660C00E40DEC /* PCViewController.h */,
-				9FCEEDAE18CA660C00E40DEC /* PCViewController.m */,
+				9FCEEDCD18CA679B00E40DEC /* AppHelper.h */,
+				9FCEEDF918CA6E6400E40DEC /* MainStoryboard.storyboard */,
 				9FCEEDB018CA660C00E40DEC /* Images.xcassets */,
+				9FCEEDF218CA695000E40DEC /* ViewControllers */,
+				9FCEEDEE18CA695000E40DEC /* Helpers */,
+				9FCEEDEF18CA695000E40DEC /* Models */,
+				9FCEEDF018CA695000E40DEC /* Other */,
+				9FCEEDF118CA695000E40DEC /* SDKs */,
+				9FCEEDF318CA695000E40DEC /* Views */,
 				9FCEED9F18CA660C00E40DEC /* Supporting Files */,
 			);
 			path = "Sample Parse.com Photo Video App";
@@ -150,6 +213,92 @@
 				9FCEEDC018CA660D00E40DEC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FCEEDEE18CA695000E40DEC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9FCEEDEF18CA695000E40DEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FCEEDF018CA695000E40DEC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEEE1118CA75E500E40DEC /* backgroundPattern.png */,
+				9FCEEE1218CA75E500E40DEC /* backgroundPattern@2x.png */,
+				9FCEEE1318CA75E500E40DEC /* default-568.png */,
+				9FCEEE1418CA75E500E40DEC /* default-568@2x.png */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9FCEEDF118CA695000E40DEC /* SDKs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDKs;
+			sourceTree = "<group>";
+		};
+		9FCEEDF218CA695000E40DEC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEEE0718CA751800E40DEC /* SplashViewController */,
+				9FCEEE0818CA752600E40DEC /* LoginViewController */,
+				9FCEEE0918CA753500E40DEC /* SignUpViewController */,
+				9FCEEE0A18CA754600E40DEC /* MainViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9FCEEDF318CA695000E40DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FCEEE0718CA751800E40DEC /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEEDFB18CA6F0700E40DEC /* PACSplashViewController.h */,
+				9FCEEDFC18CA6F0700E40DEC /* PACSplashViewController.m */,
+			);
+			name = SplashViewController;
+			sourceTree = "<group>";
+		};
+		9FCEEE0818CA752600E40DEC /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEEDFE18CA6F1300E40DEC /* PACLoginViewController.h */,
+				9FCEEDFF18CA6F1300E40DEC /* PACLoginViewController.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		9FCEEE0918CA753500E40DEC /* SignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEEE0018CA6F1300E40DEC /* PACSignupViewController.h */,
+				9FCEEE0118CA6F1300E40DEC /* PACSignupViewController.m */,
+			);
+			name = SignUpViewController;
+			sourceTree = "<group>";
+		};
+		9FCEEE0A18CA754600E40DEC /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEEE0218CA6F1300E40DEC /* PACMainViewController.h */,
+				9FCEEE0318CA6F1300E40DEC /* PACMainViewController.m */,
+			);
+			name = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +378,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCEEE1818CA75E500E40DEC /* default-568.png in Resources */,
+				9FCEEDFA18CA6E6400E40DEC /* MainStoryboard.storyboard in Resources */,
+				9FCEEE1918CA75E500E40DEC /* default-568@2x.png in Resources */,
+				9FCEEE1718CA75E500E40DEC /* backgroundPattern@2x.png in Resources */,
+				9FCEEE1618CA75E500E40DEC /* backgroundPattern.png in Resources */,
 				9FCEEDB118CA660C00E40DEC /* Images.xcassets in Resources */,
 				9FCEEDA318CA660C00E40DEC /* InfoPlist.strings in Resources */,
-				9FCEEDAC18CA660C00E40DEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +404,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCEEDA518CA660C00E40DEC /* main.m in Sources */,
-				9FCEEDAF18CA660C00E40DEC /* PCViewController.m in Sources */,
+				9FCEEE0518CA6F1300E40DEC /* PACSignupViewController.m in Sources */,
+				9FCEEE0618CA6F1300E40DEC /* PACMainViewController.m in Sources */,
+				9FCEEE0418CA6F1300E40DEC /* PACLoginViewController.m in Sources */,
+				9FCEEDFD18CA6F0700E40DEC /* PACSplashViewController.m in Sources */,
 				9FCEEDA918CA660C00E40DEC /* PCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,14 +437,6 @@
 				9FCEEDA218CA660C00E40DEC /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9FCEEDAA18CA660C00E40DEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FCEEDAB18CA660C00E40DEC /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		9FCEEDC018CA660D00E40DEC /* InfoPlist.strings */ = {
@@ -379,6 +527,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";
 				INFOPLIST_FILE = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Info.plist";
@@ -392,6 +545,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";
 				INFOPLIST_FILE = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Info.plist";
@@ -461,6 +619,7 @@
 				9FCEEDC918CA660D00E40DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FCEEDCA18CA660D00E40DEC /* Build configuration list for PBXNativeTarget "Sample Parse.com Photo Video AppTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +628,7 @@
 				9FCEEDCC18CA660D00E40DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

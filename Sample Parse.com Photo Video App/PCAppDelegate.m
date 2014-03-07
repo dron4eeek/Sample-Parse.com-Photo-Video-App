@@ -13,6 +13,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+  UIImage *navBackgroundImage = [UIImage imageNamed:@"topBar"];
+  [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+  //Parse.com setup
+  [Parse setApplicationId:PARCE_APP_ID
+                clientKey:PARSE_CLIENT_ID];
+  [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+  
+  PFUser *user = [PFUser currentUser];
+  [user refreshInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+    
+  }];
+
+  // Set default ACLs
+//  PFACL *defaultACL = [PFACL ACL];
+//  [defaultACL setPublicReadAccess:YES];
+//  [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+  
     return YES;
 }
 							
@@ -42,5 +59,21 @@
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+//// Facebook oauth callback
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+//  return [PFFacebookUtils handleOpenURL:url];
+//}
+//
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+//  return [PFFacebookUtils handleOpenURL:url];
+//}
+//
+//- (void)applicationDidBecomeActive:(UIApplication *)application {
+//  // Handle an interruption during the authorization flow, such as the user clicking the home button.
+//  [FBSession.activeSession handleDidBecomeActive];
+//}
+
 
 @end

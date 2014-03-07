@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rIG-XC-mqQ">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uuJ-mn-Ajh">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="rIG-XC-mqQ" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GyN-rO-yFd">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uBs-R5-vRR" kind="relationship" relationship="rootViewController" id="PRV-93-8W8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgC-Or-Tao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-77" y="617"/>
+        </scene>
+        <!--Splash View Controller - Account Demo-->
+        <scene sceneID="OvX-R3-5Hc">
+            <objects>
+                <viewController id="uBs-R5-vRR" customClass="PACSplashViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Why-sq-2BH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="default-568.png" id="Xfy-WK-BFk">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="W33-eS-P0z">
+                                <rect key="frame" x="142" y="234" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KM4-EJ-eDW">
+                                <rect key="frame" x="60" y="279" width="200" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="loginButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="loginButtonPressed.png"/>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="uBs-R5-vRR" eventType="touchUpInside" id="Xuu-J3-hkU"/>
+                                    <segue destination="mRK-ZE-TEt" kind="push" id="ICw-2a-fzQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8q2-94-N9B">
+                                <rect key="frame" x="60" y="227" width="200" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="Use with out login" backgroundImage="topBar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="loginButtonPressed.png"/>
+                                <connections>
+                                    <action selector="didTapWithOutLogin:" destination="uBs-R5-vRR" eventType="touchUpInside" id="DPn-Yo-IRa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nNV-H1-rJU">
+                                <rect key="frame" x="60" y="331" width="200" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="signupButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="signupButtonPressed.png"/>
+                                <connections>
+                                    <action selector="didTapSignup:" destination="uBs-R5-vRR" eventType="touchUpInside" id="OO9-WS-jvy"/>
+                                    <segue destination="WOq-Nj-K1a" kind="push" identifier="" id="3NA-9P-j6Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Account Demo" id="tTP-1H-sPL"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="W33-eS-P0z" id="4Qd-Td-1Fh"/>
+                        <outlet property="btnWithOutLogin" destination="8q2-94-N9B" id="OfL-uC-99S"/>
+                        <outlet property="loginButton" destination="KM4-EJ-eDW" id="3Ct-UZ-DXu"/>
+                        <outlet property="signupButton" destination="nNV-H1-rJU" id="FfT-xd-Ksx"/>
+                        <segue destination="QKD-5f-fRl" kind="push" identifier="splashToMain" id="5dZ-W8-Vut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ew-Ya-T2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="617"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="lLw-17-50a">
+            <objects>
+                <viewController id="QKD-5f-fRl" customClass="PACMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eaT-b3-DBp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundPattern.png" id="qas-jc-zKR">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DV0-of-89b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nxy-eF-grw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="545"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="VfG-hr-U8e">
+            <objects>
+                <viewController id="mRK-ZE-TEt" customClass="PACLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7D2-ec-yR0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundPattern" id="oBV-XB-XA1">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rly-xA-Z4Q">
+                                <rect key="frame" x="60" y="170" width="200" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="loginButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="loginButtonPressed.png"/>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="mRK-ZE-TEt" eventType="touchUpInside" id="IhZ-W1-dr7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="1Oi-oD-m8C">
+                                <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="8DS-T1-ht5">
+                                <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" id="hW8-Tm-lQS">
+                                <rect key="frame" x="20" y="44" width="280" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" id="vLh-8i-ceX">
+                                <rect key="frame" x="20" y="108" width="280" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="93Z-L1-h6m">
+                                <rect key="frame" x="142" y="234" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="00R-kv-MDB"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="93Z-L1-h6m" id="C1l-HE-13I"/>
+                        <outlet property="passwordEntry" destination="vLh-8i-ceX" id="Nqp-go-KPf"/>
+                        <outlet property="usernameEntry" destination="hW8-Tm-lQS" id="syY-cn-Bq0"/>
+                        <segue destination="QKD-5f-fRl" kind="push" identifier="loginToMain" id="hKv-6u-6B1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2a-SZ-TiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="-8"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="oTp-XU-gWW">
+            <objects>
+                <viewController id="WOq-Nj-K1a" customClass="PACSignupViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R1J-3I-vW9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundPattern" id="iru-N9-KP7">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f63-vC-G4H">
+                                <rect key="frame" x="60" y="210" width="200" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="signupButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="signupButtonPressed.png"/>
+                                <connections>
+                                    <action selector="didTapSignup:" destination="WOq-Nj-K1a" eventType="touchUpInside" id="f8I-6H-vh4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="El2-bm-mmJ">
+                                <rect key="frame" x="0.0" y="150" width="320" height="44"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" id="n0L-Iw-uGn">
+                                <rect key="frame" x="20" y="150" width="280" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="NIk-ep-t4g">
+                                <rect key="frame" x="0.0" y="30" width="320" height="44"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" id="Rep-hf-UKv">
+                                <rect key="frame" x="20" y="30" width="280" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="entryBackground" id="j6A-oW-bOK">
+                                <rect key="frame" x="0.0" y="90" width="320" height="44"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" id="H0r-jC-O8Y">
+                                <rect key="frame" x="20" y="90" width="280" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="98g-uW-YBO">
+                                <rect key="frame" x="142" y="262" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GQu-Xi-bRH"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="98g-uW-YBO" id="gCJ-Vi-mTJ"/>
+                        <outlet property="emailEntry" destination="Rep-hf-UKv" id="Y8h-Ph-6c2"/>
+                        <outlet property="passwordEntry" destination="n0L-Iw-uGn" id="Ngf-gU-U3l"/>
+                        <outlet property="usernameEntry" destination="H0r-jC-O8Y" id="TDm-cw-rNS"/>
+                        <segue destination="QKD-5f-fRl" kind="push" identifier="signupToMain" id="nuv-Mo-vKl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcD-Ed-NTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="1140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundPattern" width="320" height="568"/>
+        <image name="backgroundPattern.png" width="320" height="568"/>
+        <image name="default-568.png" width="320" height="568"/>
+        <image name="entryBackground" width="320" height="44"/>
+        <image name="loginButton" width="202" height="46"/>
+        <image name="loginButtonPressed.png" width="202" height="46"/>
+        <image name="signupButton" width="202" height="46"/>
+        <image name="signupButtonPressed.png" width="202" height="46"/>
+        <image name="topBar" width="320" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="5dZ-W8-Vut"/>
+    </inferredMetricsTieBreakers>
+</document>
