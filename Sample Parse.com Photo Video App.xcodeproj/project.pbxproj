@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A330EC2ABA8451ABD87673D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9667A9A8F94AE1B3BECBE6 /* libPods.a */; };
+		9FC22DED18CA7F10008C0208 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */; };
 		9FCEED9918CA660C00E40DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9818CA660C00E40DEC /* Foundation.framework */; };
 		9FCEED9B18CA660C00E40DEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */; };
 		9FCEED9D18CA660C00E40DEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9C18CA660C00E40DEC /* UIKit.framework */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		2D9667A9A8F94AE1B3BECBE6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		9FCEED9518CA660C00E40DEC /* Sample Parse.com Photo Video App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Parse.com Photo Video App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEED9818CA660C00E40DEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC22DED18CA7F10008C0208 /* libz.1.1.3.dylib in Frameworks */,
 				9FCEEDF518CA698100E40DEC /* Parse.framework in Frameworks */,
 				9FCEEDE118CA68B900E40DEC /* SystemConfiguration.framework in Frameworks */,
 				9FCEEDDF18CA68B300E40DEC /* StoreKit.framework in Frameworks */,
@@ -160,6 +163,7 @@
 		9FCEED9718CA660C00E40DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */,
 				9FCEEDF418CA698100E40DEC /* Parse.framework */,
 				9FCEEDE018CA68B900E40DEC /* SystemConfiguration.framework */,
 				9FCEEDDE18CA68B300E40DEC /* StoreKit.framework */,

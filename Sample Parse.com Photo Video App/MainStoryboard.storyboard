@@ -108,6 +108,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundPattern.png" id="qas-jc-zKR">
                                 <rect key="frame" x="0.0" y="-105" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2W4-vB-gMQ">
+                                <rect key="frame" x="41" y="40" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HGi-mg-dj3" kind="push" id="mWw-UW-9pU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -115,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nxy-eF-grw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="545"/>
+            <point key="canvasLocation" x="1238" y="91"/>
         </scene>
         <!--Photo Upload View Controller-->
         <scene sceneID="r9D-3w-dUQ">
@@ -284,5 +294,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="5dZ-W8-Vut"/>
+        <segue reference="mWw-UW-9pU"/>
     </inferredMetricsTieBreakers>
 </document>
