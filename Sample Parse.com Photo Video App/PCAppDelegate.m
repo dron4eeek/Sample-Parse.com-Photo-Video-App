@@ -15,6 +15,7 @@
     // Override point for customization after application launch.
   UIImage *navBackgroundImage = [UIImage imageNamed:@"topBar"];
   [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
   //Parse.com setup
   [Parse setApplicationId:PARCE_APP_ID
                 clientKey:PARSE_CLIENT_ID];
@@ -26,9 +27,9 @@
   }];
 
   // Set default ACLs
-//  PFACL *defaultACL = [PFACL ACL];
-//  [defaultACL setPublicReadAccess:YES];
-//  [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+  PFACL *defaultACL = [PFACL ACL];
+  [defaultACL setPublicReadAccess:YES];
+  [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
   
     return YES;
 }

@@ -10,10 +10,11 @@
 #import <RESideMenu.h>
 #import <FRDLivelyButton.h>
 #import <MHGallery.h>
-//#import <MHOverViewController.h>
+#import <DBCameraViewController.h>
+#import <DBCameraView.h>
 #import <MHGalleryCells.h>
 
-@interface PCFirstViewController () <UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UIViewControllerTransitioningDelegate>
+@interface PCFirstViewController () <UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UIViewControllerTransitioningDelegate, DBCameraViewControllerDelegate, TabbarControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong) NSArray *galleryDataSource;
@@ -28,12 +29,16 @@
 {
   [super viewDidLoad];
 	// Do any additional setup after loading the view.
+  PCTabBarPhotoViewController * tabbar = (PCTabBarPhotoViewController*)self.tabBarController;
+  tabbar.cameraButtonDelegate = self;
   
   FRDLivelyButton *button = [[FRDLivelyButton alloc] initWithFrame:CGRectMake(0,0,36,28)];
   [button setStyle:kFRDLivelyButtonStyleHamburger animated:YES];
   [button addTarget:self action:@selector(leftMenuButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
   UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
   self.navigationItem.leftBarButtonItem = buttonItem;
+  
+  
   
   MHGalleryItem *youtube = [[MHGalleryItem alloc]initWithURL:@"http://www.youtube.com/watch?v=YSdJtNen-EA"
                                                  galleryType:MHGalleryTypeVideo];
@@ -93,6 +98,12 @@
                              ];
   self.tableView.backgroundColor = [UIColor colorWithRed:0.83 green:0.84 blue:0.86 alpha:1];
   [self.tableView reloadData];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear:animated];
+  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -250,4 +261,11 @@
 {
   [self.sideMenuViewController presentMenuViewController];
 }
+
+
+- (void)cameraButtonDidTap:(id)sender
+{
+  NSLog(@"didShowCamera");
+}
+
 @end

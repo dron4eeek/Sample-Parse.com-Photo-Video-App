@@ -11,7 +11,12 @@
 #import "MBProgressHUD.h"
 #include <stdlib.h>
 
-@interface PCPhotoUploadViewController () <CTAssetsPickerControllerDelegate, UINavigationControllerDelegate>
+#import <DBCameraViewController.h>
+#import <DBCameraView.h>
+#import <DBCameraContainer.h>
+#import <FRDLivelyButton.h>
+
+@interface PCPhotoUploadViewController () <CTAssetsPickerControllerDelegate, UINavigationControllerDelegate, DBCameraViewControllerDelegate, DBCameraViewDelegate, DBCameraContainerDelegate>
 {
   int b;
   NSMutableArray *allImages;
@@ -32,6 +37,12 @@
   self.picker = [[CTAssetsPickerController alloc] init];
   self.picker.delegate = self;
   self.picker.assetsFilter = [ALAssetsFilter allPhotos];
+  
+  FRDLivelyButton *button3 = [[FRDLivelyButton alloc] initWithFrame:CGRectMake(0,0,36,28)];
+  [button3 setStyle:kFRDLivelyButtonStyleCirclePlus animated:YES];
+  [button3 addTarget:self action:@selector(openCamera:) forControlEvents:UIControlEventTouchUpInside];
+  UIBarButtonItem *buttonItem3 = [[UIBarButtonItem alloc] initWithCustomView:button3];
+  self.navigationItem.leftBarButtonItem = buttonItem3;
 }
 
 
@@ -170,5 +181,34 @@
   b++;
 }
 
+- (void)openCamera:(id)sender
+{
+  [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[DBCameraContainer alloc] initWithDelegate:self]];
+  [nav setNavigationBarHidden:YES];
+  [self presentViewController:nav animated:YES completion:nil];
+}
+
+#pragma mark - DBCameraViewControllerDelegate
+
+- (void) dismissCamera
+{
+  [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) captureImageDidFinish:(UIImage *)image withMetadata:(NSDictionary *)metadata
+{
+  [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)switchFromController:(id)fromController toController:(id)controller
+{
+  
+}
+
+- (void)backFromController:(id)fromController
+{
+  
+}
 
 @end

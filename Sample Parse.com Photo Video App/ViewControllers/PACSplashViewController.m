@@ -24,7 +24,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-  [self checkStatus];
+//  [self checkStatus];
 }
 
 - (void)checkStatus
@@ -61,7 +61,9 @@
 
 - (IBAction)didTapWithOutLogin:(id)sender
 {
-  
+  [self dismissViewControllerAnimated:YES completion:^{
+    
+  }];
 }
 
 @end

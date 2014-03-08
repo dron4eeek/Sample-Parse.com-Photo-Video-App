@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet NZCircularImageView *imgViewUser;
 @property (weak, nonatomic) IBOutlet UILabel *lblUserName;
 
+
 @end
 
 @implementation PCLeftMenuViewController

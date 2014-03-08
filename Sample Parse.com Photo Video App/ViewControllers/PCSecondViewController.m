@@ -8,7 +8,7 @@
 
 #import "PCSecondViewController.h"
 
-@interface PCSecondViewController ()
+@interface PCSecondViewController () <TabbarControllerDelegate>
 
 @end
 
@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+  PCTabBarPhotoViewController * tabbar = (PCTabBarPhotoViewController*)self.tabBarController;
+  tabbar.cameraButtonDelegate = self;
 	// Do any additional setup after loading the view.
 }
 
@@ -33,6 +35,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)cameraButtonDidTap:(id)sender
+{
+  NSLog(@"sdsd");
 }
 
 @end

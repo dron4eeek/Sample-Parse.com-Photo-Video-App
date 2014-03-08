@@ -13,10 +13,19 @@
 		9F2FEAF918CB3FAA000E914C /* PCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEAF818CB3FAA000E914C /* PCFirstViewController.m */; };
 		9F2FEAFC18CB3FB4000E914C /* PCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEAFB18CB3FB4000E914C /* PCSecondViewController.m */; };
 		9F2FEB0018CB5933000E914C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDF418CA698100E40DEC /* Parse.framework */; };
+		9F2FEB0518CB6723000E914C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2FEB0418CB6722000E914C /* AVFoundation.framework */; };
+		9F2FEB0818CB818F000E914C /* PCTabBarPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEB0718CB818F000E914C /* PCTabBarPhotoViewController.m */; };
+		9F2FEB1518CB9083000E914C /* CRAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEB0A18CB9083000E914C /* CRAlertHelper.m */; };
+		9F2FEB1618CB9083000E914C /* UIImage+ResizeMagick.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEB0C18CB9083000E914C /* UIImage+ResizeMagick.m */; };
+		9F2FEB1718CB9083000E914C /* UILabel+dynamicSizeMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEB0E18CB9083000E914C /* UILabel+dynamicSizeMe.m */; };
+		9F2FEB1818CB9083000E914C /* UITableViewCell+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEB1018CB9083000E914C /* UITableViewCell+Helpers.m */; };
+		9F2FEB1918CB9083000E914C /* UIView+Attach.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEB1218CB9083000E914C /* UIView+Attach.m */; };
+		9F2FEB1A18CB9083000E914C /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEB1418CB9083000E914C /* UIView+Frame.m */; };
 		9FC22DED18CA7F10008C0208 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */; };
+		9FC5210818CB9A9B001BAB1B /* FactoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5210718CB9A9B001BAB1B /* FactoryHelper.m */; };
 		9FCEED9918CA660C00E40DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9818CA660C00E40DEC /* Foundation.framework */; };
 		9FCEED9B18CA660C00E40DEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */; };
-		9FCEED9D18CA660C00E40DEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9C18CA660C00E40DEC /* UIKit.framework */; };
+		9FCEED9D18CA660C00E40DEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9C18CA660C00E40DEC /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9FCEEDA318CA660C00E40DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEDA118CA660C00E40DEC /* InfoPlist.strings */; };
 		9FCEEDA518CA660C00E40DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDA418CA660C00E40DEC /* main.m */; };
 		9FCEEDA918CA660C00E40DEC /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDA818CA660C00E40DEC /* PCAppDelegate.m */; };
@@ -67,7 +76,24 @@
 		9F2FEAF818CB3FAA000E914C /* PCFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCFirstViewController.m; sourceTree = "<group>"; };
 		9F2FEAFA18CB3FB4000E914C /* PCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCSecondViewController.h; sourceTree = "<group>"; };
 		9F2FEAFB18CB3FB4000E914C /* PCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSecondViewController.m; sourceTree = "<group>"; };
+		9F2FEB0418CB6722000E914C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9F2FEB0618CB818F000E914C /* PCTabBarPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTabBarPhotoViewController.h; sourceTree = "<group>"; };
+		9F2FEB0718CB818F000E914C /* PCTabBarPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTabBarPhotoViewController.m; sourceTree = "<group>"; };
+		9F2FEB0918CB9083000E914C /* CRAlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRAlertHelper.h; sourceTree = "<group>"; };
+		9F2FEB0A18CB9083000E914C /* CRAlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRAlertHelper.m; sourceTree = "<group>"; };
+		9F2FEB0B18CB9083000E914C /* UIImage+ResizeMagick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeMagick.h"; sourceTree = "<group>"; };
+		9F2FEB0C18CB9083000E914C /* UIImage+ResizeMagick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeMagick.m"; sourceTree = "<group>"; };
+		9F2FEB0D18CB9083000E914C /* UILabel+dynamicSizeMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+dynamicSizeMe.h"; sourceTree = "<group>"; };
+		9F2FEB0E18CB9083000E914C /* UILabel+dynamicSizeMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+dynamicSizeMe.m"; sourceTree = "<group>"; };
+		9F2FEB0F18CB9083000E914C /* UITableViewCell+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Helpers.h"; sourceTree = "<group>"; };
+		9F2FEB1018CB9083000E914C /* UITableViewCell+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Helpers.m"; sourceTree = "<group>"; };
+		9F2FEB1118CB9083000E914C /* UIView+Attach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Attach.h"; sourceTree = "<group>"; };
+		9F2FEB1218CB9083000E914C /* UIView+Attach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Attach.m"; sourceTree = "<group>"; };
+		9F2FEB1318CB9083000E914C /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		9F2FEB1418CB9083000E914C /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		9FC5210618CB9A9B001BAB1B /* FactoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryHelper.h; sourceTree = "<group>"; };
+		9FC5210718CB9A9B001BAB1B /* FactoryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryHelper.m; sourceTree = "<group>"; };
 		9FCEED9518CA660C00E40DEC /* Sample Parse.com Photo Video App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Parse.com Photo Video App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEED9818CA660C00E40DEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2FEB0518CB6723000E914C /* AVFoundation.framework in Frameworks */,
 				9F2FEB0018CB5933000E914C /* Parse.framework in Frameworks */,
 				9FC22DED18CA7F10008C0208 /* libz.1.1.3.dylib in Frameworks */,
 				9FCEEDE118CA68B900E40DEC /* SystemConfiguration.framework in Frameworks */,
@@ -167,6 +194,8 @@
 			children = (
 				9F2FEAF118CB3E23000E914C /* PCSlideViewController.h */,
 				9F2FEAF218CB3E23000E914C /* PCSlideViewController.m */,
+				9F2FEB0618CB818F000E914C /* PCTabBarPhotoViewController.h */,
+				9F2FEB0718CB818F000E914C /* PCTabBarPhotoViewController.m */,
 			);
 			name = SlideController;
 			sourceTree = "<group>";
@@ -203,6 +232,7 @@
 		9FCEED9718CA660C00E40DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F2FEB0418CB6722000E914C /* AVFoundation.framework */,
 				9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */,
 				9FCEEDF418CA698100E40DEC /* Parse.framework */,
 				9FCEEDE018CA68B900E40DEC /* SystemConfiguration.framework */,
@@ -229,6 +259,8 @@
 				9FCEEDA718CA660C00E40DEC /* PCAppDelegate.h */,
 				9FCEEDA818CA660C00E40DEC /* PCAppDelegate.m */,
 				9FCEEDCD18CA679B00E40DEC /* AppHelper.h */,
+				9FC5210618CB9A9B001BAB1B /* FactoryHelper.h */,
+				9FC5210718CB9A9B001BAB1B /* FactoryHelper.m */,
 				9FCEEDF918CA6E6400E40DEC /* MainStoryboard.storyboard */,
 				9FCEEDB018CA660C00E40DEC /* Images.xcassets */,
 				9FCEEDF218CA695000E40DEC /* ViewControllers */,
@@ -274,6 +306,18 @@
 		9FCEEDEE18CA695000E40DEC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9F2FEB0918CB9083000E914C /* CRAlertHelper.h */,
+				9F2FEB0A18CB9083000E914C /* CRAlertHelper.m */,
+				9F2FEB0B18CB9083000E914C /* UIImage+ResizeMagick.h */,
+				9F2FEB0C18CB9083000E914C /* UIImage+ResizeMagick.m */,
+				9F2FEB0D18CB9083000E914C /* UILabel+dynamicSizeMe.h */,
+				9F2FEB0E18CB9083000E914C /* UILabel+dynamicSizeMe.m */,
+				9F2FEB0F18CB9083000E914C /* UITableViewCell+Helpers.h */,
+				9F2FEB1018CB9083000E914C /* UITableViewCell+Helpers.m */,
+				9F2FEB1118CB9083000E914C /* UIView+Attach.h */,
+				9F2FEB1218CB9083000E914C /* UIView+Attach.m */,
+				9F2FEB1318CB9083000E914C /* UIView+Frame.h */,
+				9F2FEB1418CB9083000E914C /* UIView+Frame.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -324,10 +368,10 @@
 		9FCEEE0718CA751800E40DEC /* SplashViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9FCEEE0818CA752600E40DEC /* LoginViewController */,
-				9FCEEE0918CA753500E40DEC /* SignUpViewController */,
 				9FCEEDFB18CA6F0700E40DEC /* PACSplashViewController.h */,
 				9FCEEDFC18CA6F0700E40DEC /* PACSplashViewController.m */,
+				9FCEEE0818CA752600E40DEC /* LoginViewController */,
+				9FCEEE0918CA753500E40DEC /* SignUpViewController */,
 			);
 			name = SplashViewController;
 			sourceTree = "<group>";
@@ -496,16 +540,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2FEB1818CB9083000E914C /* UITableViewCell+Helpers.m in Sources */,
+				9F2FEB0818CB818F000E914C /* PCTabBarPhotoViewController.m in Sources */,
 				9F2FEAF918CB3FAA000E914C /* PCFirstViewController.m in Sources */,
+				9F2FEB1918CB9083000E914C /* UIView+Attach.m in Sources */,
 				9FCEEDA518CA660C00E40DEC /* main.m in Sources */,
 				9FCEEE0518CA6F1300E40DEC /* PACSignupViewController.m in Sources */,
 				9F2FEAF618CB3F98000E914C /* PCLeftMenuViewController.m in Sources */,
 				9FCEEE0418CA6F1300E40DEC /* PACLoginViewController.m in Sources */,
 				9F2FEAFC18CB3FB4000E914C /* PCSecondViewController.m in Sources */,
 				9FCEEDFD18CA6F0700E40DEC /* PACSplashViewController.m in Sources */,
+				9FC5210818CB9A9B001BAB1B /* FactoryHelper.m in Sources */,
 				9F2FEAF318CB3E24000E914C /* PCSlideViewController.m in Sources */,
 				9FCEEE1E18CA780700E40DEC /* PCPhotoUploadViewController.m in Sources */,
+				9F2FEB1618CB9083000E914C /* UIImage+ResizeMagick.m in Sources */,
 				9FCEEDA918CA660C00E40DEC /* PCAppDelegate.m in Sources */,
+				9F2FEB1A18CB9083000E914C /* UIView+Frame.m in Sources */,
+				9F2FEB1518CB9083000E914C /* CRAlertHelper.m in Sources */,
+				9F2FEB1718CB9083000E914C /* UILabel+dynamicSizeMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,11 +680,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Dron/Projects/MyOwnProjects/Sample-Parse.com-Photo-Video-App/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
+					"$(SRCROOT)/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";
 				INFOPLIST_FILE = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					AssetsLibrary,
@@ -654,11 +707,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Dron/Projects/MyOwnProjects/Sample-Parse.com-Photo-Video-App/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
+					"$(SRCROOT)/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";
 				INFOPLIST_FILE = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					AssetsLibrary,

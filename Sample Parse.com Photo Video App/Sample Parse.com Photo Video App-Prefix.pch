@@ -16,5 +16,8 @@
   #import <Parse/Parse.h>
   #import <QuartzCore/QuartzCore.h>
   #import "PCAppDelegate.h"
+  #import "FactoryHelper.h"
+  #import <FRDLivelyButton.h>
   #import "AppHelper.h"
+  #import "PCTabBarPhotoViewController.h"
 #endif

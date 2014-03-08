@@ -17,21 +17,13 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  self.title = @"Login";
+  self.title = @"Sign Up";
   
-  UIImage *backArrow = [UIImage imageNamed:@"backArrow"];
-  UIImage *backArrowPressed = [UIImage imageNamed:@"backArrowPressed"];
-  
-  UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-  [backButton setImage:backArrow forState:UIControlStateNormal];
-  [backButton setImage:backArrowPressed forState:UIControlStateSelected];
-  
-  backButton.frame = CGRectMake(2.0f, 2.0f, 40.0f, 40.0f);
-  [backButton addTarget:self action:@selector(didTapBack:) forControlEvents:UIControlEventTouchUpInside];
-  
-  UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:backButton];
-  
-  self.navigationItem.leftBarButtonItem = back;
+  FRDLivelyButton *button = [[FRDLivelyButton alloc] initWithFrame:CGRectMake(0,0,36,28)];
+  [button setStyle:kFRDLivelyButtonStyleArrowLeft animated:YES];
+  [button addTarget:self action:@selector(didTapBack:) forControlEvents:UIControlEventTouchUpInside];
+  UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+  self.navigationItem.leftBarButtonItem = buttonItem;
   
   UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                  initWithTarget:self

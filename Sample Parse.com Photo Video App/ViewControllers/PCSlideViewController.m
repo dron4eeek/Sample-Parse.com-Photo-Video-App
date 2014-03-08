@@ -25,4 +25,10 @@
   self.delegate = (PCSlideViewController *)self.menuViewController;
 }
 
+
+- (void)viewDidAppear:(BOOL)animated
+{
+  [super viewDidAppear:animated];
+//  [[FactoryHelper sharedClient] presentLoginViewController];
+}
 @end

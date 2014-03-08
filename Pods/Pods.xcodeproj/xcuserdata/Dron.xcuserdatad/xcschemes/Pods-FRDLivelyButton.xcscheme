@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED36BA6A4C444CC1A7142956"
+               BlueprintIdentifier = "D939FE1CE9B042CE9250C580"
                BuildableName = "libPods-FRDLivelyButton.a"
                BlueprintName = "Pods-FRDLivelyButton"
                ReferencedContainer = "container:Pods.xcodeproj">

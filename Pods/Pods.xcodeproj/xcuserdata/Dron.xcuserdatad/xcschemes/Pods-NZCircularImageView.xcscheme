@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F04980F197B4AE6A5D33DB6"
+               BlueprintIdentifier = "762824BD60164EBB9E56E7DB"
                BuildableName = "libPods-NZCircularImageView.a"
                BlueprintName = "Pods-NZCircularImageView"
                ReferencedContainer = "container:Pods.xcodeproj">
