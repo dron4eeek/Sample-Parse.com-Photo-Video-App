@@ -12,9 +12,13 @@
 #include <stdlib.h>
 
 @interface PCPhotoUploadViewController () <CTAssetsPickerControllerDelegate, UINavigationControllerDelegate>
-
+{
+  int b;
+  NSMutableArray *allImages;
+}
 @property (nonatomic, strong) CTAssetsPickerController *picker;
 @property (nonatomic, strong) NSMutableArray *assets;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -78,8 +82,9 @@
       PFObject *userPhoto = [PFObject objectWithClassName:@"Photos"];
       [userPhoto setObject:imageFile forKey:@"photo"];
       
-      // Set the access control list to current user for security purposes
-      userPhoto.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
+      PFACL *photoACL = [PFACL ACLWithUser:[PFUser currentUser]];
+      [photoACL setPublicReadAccess:YES];
+      userPhoto.ACL = photoACL;
       
       PFUser *user = [PFUser currentUser];
       [userPhoto setObject:user forKey:@"user"];
@@ -108,22 +113,39 @@
 - (void)downloadAllImages
 {
   PFQuery *query = [PFQuery queryWithClassName:@"Photos"];
-  PFUser *user = [PFUser currentUser];
-  [query whereKey:@"user" equalTo:user];
+//  PFUser *user = [PFUser currentUser];
+//  [query whereKey:@"user" equalTo:user];
   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
   {
-    // If there are photos, we start extracting the data
-    // Save a list of object IDs while extracting this data
-    
     NSMutableArray *newObjectIDArray = [NSMutableArray array];
-    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
     if (objects.count > 0) {
       for (PFObject *eachObject in objects)
       {
-        [newObjectIDArray addObject:[eachObject objectId]];
+        [newObjectIDArray addObject:eachObject];
       }
+      NSLog(@"%lu", (unsigned long)objects.count);
+      [self setUpImages:newObjectIDArray];
     }
   }];
+}
+
+- (void)setUpImages:(NSArray *)images
+{
+  dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+  dispatch_async(queue, ^{
+    NSMutableArray *imageDataArray = [NSMutableArray array];
+    // Iterate over all images and get the data from the PFFile
+    for (int i = 0; i < images.count; i++) {
+      PFObject *eachObject = [images objectAtIndex:i];
+      PFFile *theImage = [eachObject objectForKey:@"photo"];
+      NSString *url = theImage.url;
+      NSLog(@"%@", url);
+      NSData *imageData = [theImage getData];
+      UIImage *image = [UIImage imageWithData:imageData];
+      [imageDataArray addObject:image];
+    }
+       allImages = [imageDataArray mutableCopy];
+  });
 }
 
 - (NSArray *)indexPathOfNewlyAddedAssets:(NSArray *)assets
@@ -135,5 +157,18 @@
 	
 	return indexPaths;
 }
+
+- (IBAction)down:(id)sender
+{
+  [self downloadAllImages];
+}
+
+
+- (IBAction)next:(id)sender
+{
+  self.imageView.image = [allImages objectAtIndex:b];
+  b++;
+}
+
 
 @end

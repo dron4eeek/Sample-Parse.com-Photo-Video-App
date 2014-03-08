@@ -1,6 +1,8 @@
 
 
 #import "PACLoginViewController.h"
+#import "PCSlideViewController.h"
+#import <RESideMenu.h>
 
 @interface PACLoginViewController () <UITextFieldDelegate>
 
@@ -55,7 +57,10 @@
        [activityIndicator stopAnimating];
        if (user)
        {
-         [self performSegueWithIdentifier:@"loginToMain" sender:self];
+         UIStoryboard *storyboard = DELEGATE.window.rootViewController.storyboard;
+         UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"slideController"];
+         DELEGATE.window.rootViewController = rootViewController;
+         [DELEGATE.window makeKeyAndVisible];
        } else {
          NSLog(@"%@",error);
          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed." message:@"Invalid Username and/or Password." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];

@@ -9,7 +9,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FRDLivelyButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MHVideoPhotoGallery.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NZCircularImageView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RESideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UIActivityIndicator-for-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1F36BFEC2E104026BD5CBCAA</key>
+		<key>0E23933ADE55425F8FBAF7B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95395FAC35254ECEB6F33B7A</key>
+		<key>2EBBE1A8F86B4B91B0BA20F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3091BF7D8074EE59011E3F9</key>
+		<key>5A93DCDDB86C4423BF85261F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F04980F197B4AE6A5D33DB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B18422478D744D28987ABF1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB2DA64F2548408FA67B3499</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E627FFF7017B4763B55F6ECA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ED36BA6A4C444CC1A7142956</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE07695E48874342B4C9FFEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

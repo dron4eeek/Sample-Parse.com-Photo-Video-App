@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6A330EC2ABA8451ABD87673D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9667A9A8F94AE1B3BECBE6 /* libPods.a */; };
+		9F2FEAF318CB3E24000E914C /* PCSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEAF218CB3E23000E914C /* PCSlideViewController.m */; };
+		9F2FEAF618CB3F98000E914C /* PCLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEAF518CB3F98000E914C /* PCLeftMenuViewController.m */; };
+		9F2FEAF918CB3FAA000E914C /* PCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEAF818CB3FAA000E914C /* PCFirstViewController.m */; };
+		9F2FEAFC18CB3FB4000E914C /* PCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FEAFB18CB3FB4000E914C /* PCSecondViewController.m */; };
+		9F2FEB0018CB5933000E914C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDF418CA698100E40DEC /* Parse.framework */; };
 		9FC22DED18CA7F10008C0208 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */; };
 		9FCEED9918CA660C00E40DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9818CA660C00E40DEC /* Foundation.framework */; };
 		9FCEED9B18CA660C00E40DEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEED9A18CA660C00E40DEC /* CoreGraphics.framework */; };
@@ -30,12 +35,10 @@
 		9FCEEDDD18CA68AD00E40DEC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDDC18CA68AD00E40DEC /* Security.framework */; };
 		9FCEEDDF18CA68B300E40DEC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDDE18CA68B300E40DEC /* StoreKit.framework */; };
 		9FCEEDE118CA68B900E40DEC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDE018CA68B900E40DEC /* SystemConfiguration.framework */; };
-		9FCEEDF518CA698100E40DEC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEEDF418CA698100E40DEC /* Parse.framework */; };
 		9FCEEDFA18CA6E6400E40DEC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEDF918CA6E6400E40DEC /* MainStoryboard.storyboard */; };
 		9FCEEDFD18CA6F0700E40DEC /* PACSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDFC18CA6F0700E40DEC /* PACSplashViewController.m */; };
 		9FCEEE0418CA6F1300E40DEC /* PACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEDFF18CA6F1300E40DEC /* PACLoginViewController.m */; };
 		9FCEEE0518CA6F1300E40DEC /* PACSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEE0118CA6F1300E40DEC /* PACSignupViewController.m */; };
-		9FCEEE0618CA6F1300E40DEC /* PACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEEE0318CA6F1300E40DEC /* PACMainViewController.m */; };
 		9FCEEE1618CA75E500E40DEC /* backgroundPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1118CA75E500E40DEC /* backgroundPattern.png */; };
 		9FCEEE1718CA75E500E40DEC /* backgroundPattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1218CA75E500E40DEC /* backgroundPattern@2x.png */; };
 		9FCEEE1818CA75E500E40DEC /* default-568.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEEE1318CA75E500E40DEC /* default-568.png */; };
@@ -56,6 +59,14 @@
 
 /* Begin PBXFileReference section */
 		2D9667A9A8F94AE1B3BECBE6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2FEAF118CB3E23000E914C /* PCSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCSlideViewController.h; sourceTree = "<group>"; };
+		9F2FEAF218CB3E23000E914C /* PCSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSlideViewController.m; sourceTree = "<group>"; };
+		9F2FEAF418CB3F98000E914C /* PCLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLeftMenuViewController.h; sourceTree = "<group>"; };
+		9F2FEAF518CB3F98000E914C /* PCLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLeftMenuViewController.m; sourceTree = "<group>"; };
+		9F2FEAF718CB3FAA000E914C /* PCFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCFirstViewController.h; sourceTree = "<group>"; };
+		9F2FEAF818CB3FAA000E914C /* PCFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCFirstViewController.m; sourceTree = "<group>"; };
+		9F2FEAFA18CB3FB4000E914C /* PCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCSecondViewController.h; sourceTree = "<group>"; };
+		9F2FEAFB18CB3FB4000E914C /* PCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSecondViewController.m; sourceTree = "<group>"; };
 		9FC22DEC18CA7F10008C0208 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		9FCEED9518CA660C00E40DEC /* Sample Parse.com Photo Video App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Parse.com Photo Video App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEED9818CA660C00E40DEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,8 +102,6 @@
 		9FCEEDFF18CA6F1300E40DEC /* PACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACLoginViewController.m; sourceTree = "<group>"; };
 		9FCEEE0018CA6F1300E40DEC /* PACSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACSignupViewController.h; sourceTree = "<group>"; };
 		9FCEEE0118CA6F1300E40DEC /* PACSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACSignupViewController.m; sourceTree = "<group>"; };
-		9FCEEE0218CA6F1300E40DEC /* PACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACMainViewController.h; sourceTree = "<group>"; };
-		9FCEEE0318CA6F1300E40DEC /* PACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACMainViewController.m; sourceTree = "<group>"; };
 		9FCEEE1118CA75E500E40DEC /* backgroundPattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundPattern.png; sourceTree = "<group>"; };
 		9FCEEE1218CA75E500E40DEC /* backgroundPattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundPattern@2x.png"; sourceTree = "<group>"; };
 		9FCEEE1318CA75E500E40DEC /* default-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-568.png"; sourceTree = "<group>"; };
@@ -108,8 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2FEB0018CB5933000E914C /* Parse.framework in Frameworks */,
 				9FC22DED18CA7F10008C0208 /* libz.1.1.3.dylib in Frameworks */,
-				9FCEEDF518CA698100E40DEC /* Parse.framework in Frameworks */,
 				9FCEEDE118CA68B900E40DEC /* SystemConfiguration.framework in Frameworks */,
 				9FCEEDDF18CA68B300E40DEC /* StoreKit.framework in Frameworks */,
 				9FCEEDDD18CA68AD00E40DEC /* Security.framework in Frameworks */,
@@ -140,6 +149,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2FEAF018CB3DF3000E914C /* LogedInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F2FEAFD18CB460F000E914C /* SlideController */,
+				9F2FEAFE18CB4620000E914C /* MenuController */,
+				9F2FEAF718CB3FAA000E914C /* PCFirstViewController.h */,
+				9F2FEAF818CB3FAA000E914C /* PCFirstViewController.m */,
+				9F2FEAFA18CB3FB4000E914C /* PCSecondViewController.h */,
+				9F2FEAFB18CB3FB4000E914C /* PCSecondViewController.m */,
+			);
+			name = LogedInViewController;
+			sourceTree = "<group>";
+		};
+		9F2FEAFD18CB460F000E914C /* SlideController */ = {
+			isa = PBXGroup;
+			children = (
+				9F2FEAF118CB3E23000E914C /* PCSlideViewController.h */,
+				9F2FEAF218CB3E23000E914C /* PCSlideViewController.m */,
+			);
+			name = SlideController;
+			sourceTree = "<group>";
+		};
+		9F2FEAFE18CB4620000E914C /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				9F2FEAF418CB3F98000E914C /* PCLeftMenuViewController.h */,
+				9F2FEAF518CB3F98000E914C /* PCLeftMenuViewController.m */,
+			);
+			name = MenuController;
+			sourceTree = "<group>";
+		};
 		9FCEED8C18CA660C00E40DEC = {
 			isa = PBXGroup;
 			children = (
@@ -267,11 +307,9 @@
 		9FCEEDF218CA695000E40DEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9F2FEAF018CB3DF3000E914C /* LogedInViewController */,
 				9FCEEE1B18CA77F200E40DEC /* PhotoUploadViewController */,
 				9FCEEE0718CA751800E40DEC /* SplashViewController */,
-				9FCEEE0818CA752600E40DEC /* LoginViewController */,
-				9FCEEE0918CA753500E40DEC /* SignUpViewController */,
-				9FCEEE0A18CA754600E40DEC /* MainViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +324,8 @@
 		9FCEEE0718CA751800E40DEC /* SplashViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9FCEEE0818CA752600E40DEC /* LoginViewController */,
+				9FCEEE0918CA753500E40DEC /* SignUpViewController */,
 				9FCEEDFB18CA6F0700E40DEC /* PACSplashViewController.h */,
 				9FCEEDFC18CA6F0700E40DEC /* PACSplashViewController.m */,
 			);
@@ -308,15 +348,6 @@
 				9FCEEE0118CA6F1300E40DEC /* PACSignupViewController.m */,
 			);
 			name = SignUpViewController;
-			sourceTree = "<group>";
-		};
-		9FCEEE0A18CA754600E40DEC /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9FCEEE0218CA6F1300E40DEC /* PACMainViewController.h */,
-				9FCEEE0318CA6F1300E40DEC /* PACMainViewController.m */,
-			);
-			name = MainViewController;
 			sourceTree = "<group>";
 		};
 		9FCEEE1B18CA77F200E40DEC /* PhotoUploadViewController */ = {
@@ -465,11 +496,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2FEAF918CB3FAA000E914C /* PCFirstViewController.m in Sources */,
 				9FCEEDA518CA660C00E40DEC /* main.m in Sources */,
 				9FCEEE0518CA6F1300E40DEC /* PACSignupViewController.m in Sources */,
-				9FCEEE0618CA6F1300E40DEC /* PACMainViewController.m in Sources */,
+				9F2FEAF618CB3F98000E914C /* PCLeftMenuViewController.m in Sources */,
 				9FCEEE0418CA6F1300E40DEC /* PACLoginViewController.m in Sources */,
+				9F2FEAFC18CB3FB4000E914C /* PCSecondViewController.m in Sources */,
 				9FCEEDFD18CA6F0700E40DEC /* PACSplashViewController.m in Sources */,
+				9F2FEAF318CB3E24000E914C /* PCSlideViewController.m in Sources */,
 				9FCEEE1E18CA780700E40DEC /* PCPhotoUploadViewController.m in Sources */,
 				9FCEEDA918CA660C00E40DEC /* PCAppDelegate.m in Sources */,
 			);
@@ -594,12 +628,18 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/Sample\\\\\\ Parse.com\\\\\\ Photo\\\\\\ Video\\\\\\ App/SDKs",
 					"/Users/Dron/Projects/MyOwnProjects/Sample-Parse.com-Photo-Video-App/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";
 				INFOPLIST_FILE = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					CoreGraphics,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -614,12 +654,18 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/Sample\\\\\\ Parse.com\\\\\\ Photo\\\\\\ Video\\\\\\ App/SDKs",
 					"/Users/Dron/Projects/MyOwnProjects/Sample-Parse.com-Photo-Video-App/Sample\\ Parse.com\\ Photo\\ Video\\ App/SDKs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Prefix.pch";
 				INFOPLIST_FILE = "Sample Parse.com Photo Video App/Sample Parse.com Photo Video App-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					CoreGraphics,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

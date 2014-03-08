@@ -29,14 +29,16 @@
 
 - (void)checkStatus
 {
-  NSLog(@"Splash - checkStatus");
   [activityIndicator startAnimating];
   [loginButton setHidden:YES];
   [signupButton setHidden:YES];
   
   if ([PFUser currentUser])
   {
-    [self performSegueWithIdentifier:@"splashToMain" sender:self];
+    UIStoryboard *storyboard = DELEGATE.window.rootViewController.storyboard;
+    UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"slideController"];
+    DELEGATE.window.rootViewController = rootViewController;
+    [DELEGATE.window makeKeyAndVisible];
   }
   else
   {
